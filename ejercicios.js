@@ -85,4 +85,16 @@ if (edad >= 18){
 };
 */
 
-// Ejercicio 15, 
+// Ejercicio 15, escribi un codigo que tome dos valores numericos e imprima por consola la opcion que corresponda
+// - valor1 es mayor a el valor2, - valor2 es mayor a valor1, - valor1 y valor2 son iguales.
+
+let valor1 = 66;
+let valor2 = 25;
+
+if(valor1 < valor2){
+    console.log(`${valor2} es mayor a ${valor1}`)
+} else if (valor1 > valor2){
+    console.log(`${valor1} es mayor a ${valor2}`)
+} else {
+    console.log(`${valor1} y ${valor2} son iguales`)
+};
