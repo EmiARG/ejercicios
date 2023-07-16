@@ -54,8 +54,8 @@ alert(`El valor ingresado es ${valor}`);
 // Ejercicio 10, El siguiente codigo nos devuelve "undefined" por consola. Modificalo de manera que nos devuelva el valor de la variable nombre.
  // console.log(nombre);
  // var nombre = "Carlos";
- var nombre = "Carlos";
- console.log(nombre);
+ //var nombre = "Carlos";
+ //console.log(nombre);
  
 // Ejercicio 11, teniendo en cuenta lo visto en clase scopes, que es lo que nos va a imprimir la consola en el siguiente ejercicio?
 /* let valor = 'Hola';
@@ -87,7 +87,7 @@ if (edad >= 18){
 
 // Ejercicio 15, escribi un codigo que tome dos valores numericos e imprima por consola la opcion que corresponda
 // - valor1 es mayor a el valor2, - valor2 es mayor a valor1, - valor1 y valor2 son iguales.
-
+/*
 let valor1 = 66;
 let valor2 = 25;
 
@@ -98,3 +98,122 @@ if(valor1 < valor2){
 } else {
     console.log(`${valor1} y ${valor2} son iguales`)
 };
+*/
+
+// Ejercicio 16, escribi un codigo que pida un string mediante un prompt, lo almacene en una variable y cumpla con las siguientes condiciones
+/* - Si el string es "alerta", q imprima una alerta en pantalla que diga "Soy una alerta"
+- Si el string es "consola", q imprima en consola "Soy un msj en consola"
+- En caso de que no sea ninguno de los casos anteriores, q se imprima una alerta y tambien en consola "Me muestro en ambos lados" */
+/*
+let valor = prompt('Escribir alerta o consola');
+
+if (valor === 'alerta'){
+    alert('Soy una alerta')
+} else if (valor === 'consola'){
+    console.log('Soy un msj en consola')
+} else {
+    alert('Me muestro en ambos lados')
+    console.log('Me muestro en ambos lados')
+}
+*/
+
+// Ejercicio 17, escribi un codigo mediante el uso de condicionales que defina una variable "edad" y que cumpla las siguientes condiciones
+/*
+let edad = prompt('Ingresa tu edad');
+
+if (edad < 13){
+    console.log('Soy un niño');
+} else if(edad >= 13 && edad < 20){
+    console.log('Soy un adolescente');
+} else if(edad >= 20 && edad < 50){
+    console.log('Soy un adulto');
+} else{
+    console.log('Soy un adulto mayor');
+};
+*/
+
+// Ejercicio 18, escribi una sentencia switch que cumplas los sig requisitos
+/*
+let fruta = prompt('Ingresa una fruta');
+
+switch (fruta){
+    case 'manzana':
+        console.log(`Soy una ${fruta}`);
+        break;
+    case 'banana':
+        console.log(`Soy una ${fruta}`);
+        break;
+    case 'melon':
+        console.log(`Soy un ${fruta}`);
+        break;
+    case 'sandia':
+        console.log(`Soy una ${fruta}`);
+        break;
+    default:
+        console.log(`No soy una fruta`);
+        break;
+}
+*/
+
+/* Ejercicio 19, crear un array del 1 al 10
+- crear un bucle for que imprima en consola todos los numeros del array.
+- crear un bucle que imprima solo los 5 primeros numeros.
+- crear un bucle que impria los 5 ultimos numeros.
+- crear un bucle que imprima todos los numeros, excepto el que este en la 4ta posicion.
+
+let miArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; miArr.length >= i; i++){
+    console.log(miArr[i]);
+};
+
+for (let i = 1; miArr.length >= i; i++){
+    if(i >= 6){
+        break;
+    }
+    console.log(i);
+};
+
+for (let i = 0; miArr.length >= i; i++){
+    if(i >= 6){
+        console.log(i)
+    }
+};
+
+for(let i = 0; miArr.length - 1 >= i; i++){
+    if(i === 3){
+        continue;
+    }
+    console.log(i);
+};
+*/
+
+// Ejercicio 20, escribi una funcion que reciba como parametro un nombre y q imprima en la consola "Hola soy {nombre}".
+/*
+function nombre(nombre){
+    console.log(`Mi nombre es ${nombre}`);
+};
+nombre('Emilio');
+*/
+
+// Ejercicio 21, escribi una funcion que imprima en consola la suma de dos numeros pasados por parametros.
+/*
+function suma(a, b){
+    console.log(a + b);
+}
+suma(5, 8);
+*/
+
+// Ejercicio 22, escribi una funcion que reciba dos numeros por parametro, multiplique a cada uno por dos y luego imprima por consola la suma de ambos.
+/*
+function suma(a, b){
+    console.log(a * 2 + b * 2);
+};
+suma(2,3);
+*/
+
+// Ejercicio 23, escribi una funcion que pueda recibir un numero como parametro y q imprima por consola la tabla de multiplic del 1 al 10 de es numero.
+
+function tabla(numero){
+    
+}
