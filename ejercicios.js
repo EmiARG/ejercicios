@@ -212,8 +212,59 @@ function suma(a, b){
 suma(2,3);
 */
 
-// Ejercicio 23, escribi una funcion que pueda recibir un numero como parametro y q imprima por consola la tabla de multiplic del 1 al 10 de es numero.
-
+// Ejercicio 23, escribi una funcion que pueda recibir un numero como parametro y q imprima por consola la tabla de multiplic del 1 al 10 de ese numero.
+/*
 function tabla(numero){
-    
+    for( let i = 1; i <= 10; i++){
+        let resultado = numero * i;
+        console.log(`El ${numero} multiplicado por ${i} es igual a ${resultado}`)
+    }
 }
+tabla(2);
+*/
+
+/* Ejercicio 24, escriba una funcion que reciba 2 numeros como parametro y q imprima por consola todo el intervalo entre ambos numeros, incluyendolos.
+*/
+/*
+const miFuncion = (a, b) =>{
+    if (a > b){
+        console.log(a);
+        while (a > b){
+            a--;
+            console.log(a);
+        }
+    } else if(a < b){
+        console.log(a);
+        while(a < b){
+            a++;
+            console.log(a);
+        }
+    } else {
+        console.log('Ambos numeros son iguales');
+    }
+}
+miFuncion(5, 9);
+*/
+
+// Ejercicio 25
+/*
+const sumar = (a, b) => {
+    console.log(a + b);
+};
+const restar = (a, b) => {
+    console.log(a - b);
+};
+const multiplicar = (a, b) => {
+    console.log(a * b);
+};
+const dividir = (a, b) => {
+    console.log(a / b);
+};
+const resultado = (a, b, callback) => {
+    callback(a, b);
+}
+
+resultado(4, 6, multiplicar);
+*/
+
+// Ejercicio 26, 
