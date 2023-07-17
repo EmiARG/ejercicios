@@ -267,4 +267,35 @@ const resultado = (a, b, callback) => {
 resultado(4, 6, multiplicar);
 */
 
-// Ejercicio 26, 
+// Ejercicio 26, crear un objeto literal "zapatilla" que tenga las propiedades talle, color y marca.
+/*
+let zapatilla = {
+    talle: 43,
+    color: 'Rojo',
+    marca: 'Adidas'
+};
+console.log(`Soy una zapatilla ${zapatilla.marca} de talle ${zapatilla.talle} y color ${zapatilla.color}.`);
+*/
+
+// Ejercicio 27
+/*
+let zapatilla = {
+    talle: 43,
+    color: 'Rojo',
+    marca: 'Adidas'
+};
+let zapatilla2 = {
+    talle: 45,
+    color: 'Rojo',
+    marca: 'Converse'
+};
+if(zapatilla.talle > zapatilla2.talle){
+    console.log(`El talle de la zapatilla ${zapatilla.marca} es mayor que el de la zapatilla ${zapatilla2.marca}`);
+} else if(zapatilla.talle < zapatilla2.talle){
+    console.log(`El talle de la zapatilla ${zapatilla.marca} es menor que el de la zapatilla ${zapatilla2.marca}`);
+} else {
+    console.log(`Los talles de ambas zapatillas son iguales`);
+};
+*/
+
+//
