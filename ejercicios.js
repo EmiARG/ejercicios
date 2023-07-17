@@ -298,4 +298,62 @@ if(zapatilla.talle > zapatilla2.talle){
 };
 */
 
-//
+// Ejercicio 28
+/*
+class zapatilla {
+    constructor(marca, talle, color){
+        this.marca = marca;
+        this.talle = talle;
+        this.color = color;
+    }
+};
+let zapatilla1 = new zapatilla('Adidas', 45, 'Roja');
+console.log(zapatilla1);
+let zapatilla2 = new zapatilla('Nike', 40, 'Negra');
+console.log(zapatilla2);
+*/
+
+// Ejercicio 29
+/*
+class zapatilla {
+    constructor(marca, talle, color){
+        this.marca = marca;
+        this.talle = talle;
+        this.color = color;
+        this.getInfo = () => {
+            return `Soy una zapatilla ${this.marca} de color ${this.color} y talle numero ${this.talle}`;
+        }
+    }
+};
+let zapatilla1 = new zapatilla('Adidas', 45, 'Roja');
+console.log(zapatilla1.getInfo());
+let zapatilla2 = new zapatilla('Nike', 40, 'Negra');
+console.log(zapatilla2.getInfo());
+*/
+
+// Ejercicio 30
+/*
+class zapatilla {
+    constructor(marca, talle, color, precio){
+        this.marca = marca;
+        this.talle = talle;
+        this.color = color;
+        this.precio = precio;
+    }
+};
+let zapatilla1 = new zapatilla('Adidas', 45, 'Roja', 25000);
+let zapatilla2 = new zapatilla('Nike', 40, 'Negra', 30000);
+
+const zapatillaMasCara = (a,b) => {
+    if(a.precio > b.precio){
+        console.log(`La zapatilla ${a.marca} es la mas cara del mercado, con un valor de $ ${a.precio}`);
+    } else if(a.precio < b.precio){
+        console.log(`La zapatilla ${b.marca} es la mas cara del mercado, con un valor de $ ${b.precio}`);
+    } else {
+        console.log('Ambas son las mas caras del mercado');
+    }
+};
+zapatillaMasCara(zapatilla1, zapatilla2);
+*/
+// Ejercicio 31
+
