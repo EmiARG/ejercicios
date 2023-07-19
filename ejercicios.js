@@ -355,5 +355,43 @@ const zapatillaMasCara = (a,b) => {
 };
 zapatillaMasCara(zapatilla1, zapatilla2);
 */
-// Ejercicio 31
+/* Ejercicio 31, crea un array con al menos 5 gustos de helados y luego crea una funcion que:
+ - Coloque el ultimo sabor de helado del array al principio del mismo.
+ - Agregue un sabor (recibido como parametro) al final del array.
+ - Imprima el array en consola.
+ */
+/*
+ let gustosHelados = ['Frutilla', 'Americana', 'Chocolate', 'Anana', 'Limon'];
+
+ let moverGusto = (nuevoGusto) => {
+    let ultimoGusto = gustosHelados.pop();
+    gustosHelados.unshift(ultimoGusto);
+    gustosHelados.push(nuevoGusto);
+    console.log(gustosHelados);
+ };
+ moverGusto('Dulce de leche');
+ */
+
+ // Ejercicio 32, crea una funcion que elimine el primer elemento del array y lo coloque al final. Imprimi el array en consola.
+/*
+ let gustosHelados = ['Frutilla', 'Americana', 'Chocolate', 'Anana', 'Limon'];
+
+ let moverGustos = () => {
+    gustosHelados.push(gustosHelados.shift());
+    console.log(gustosHelados)
+ };
+ moverGustos();
+ */
+
+ // Ejercicio 33, crea una funcion que invierta el orden de los elementos del array e imprima en consola un "string" a partir de ese array invertido, separando las palabras con "-".
+
+let array = ['Juan', 'Pablo', 'Lorena', 'Javier'];
+
+let funcion = () => {
+    let newArray = array.toString(array.reverse());
+    newArray.replaceAll("," , "-");
+    console.log(newArray);
+};
+funcion();
+
 
