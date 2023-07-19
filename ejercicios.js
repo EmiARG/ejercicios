@@ -388,9 +388,7 @@ zapatillaMasCara(zapatilla1, zapatilla2);
 let array = ['Juan', 'Pablo', 'Lorena', 'Javier'];
 
 let funcion = () => {
-    let newArray = array.toString(array.reverse());
-    newArray.replaceAll("," , "-");
-    console.log(newArray);
+    console.log(array.reverse().join('-'));
 };
 funcion();
 
