@@ -384,12 +384,46 @@ zapatillaMasCara(zapatilla1, zapatilla2);
  */
 
  // Ejercicio 33, crea una funcion que invierta el orden de los elementos del array e imprima en consola un "string" a partir de ese array invertido, separando las palabras con "-".
-
+/*
 let array = ['Juan', 'Pablo', 'Lorena', 'Javier'];
 
 let funcion = () => {
     console.log(array.reverse().join('-'));
 };
 funcion();
+*/
 
+/* Ejercicio 34, crea otro array de gustos de helado con al menos 3 gustos de helado. Luego, crea una funcion que una ambos arrays y retorne un unico array que solo deje los dos ultimos elementos del primer array y los primeros del segundo. Imprimir el nuevo array.
+*/
+/*
+let arr1 = ['Frutilla', 'Americana', 'Chocolate'];
+let arr2 = ['Dulce de leche', 'Kinoto', 'Almendras'];
 
+let funcion = () => {
+    arr1.shift();
+    arr2.pop();
+    console.log(arr1.concat(arr2));
+};
+funcion();
+*/
+/*
+let funcion = () => {
+    let gustos =  arr1.slice(arr1.length - 2).concat(arr2.slice(0, 2));
+    return gustos;
+};
+console.log(funcion());
+*/
+
+/* Ejercicio 35, Escribí un código en el cual crees un array con gustos de helados y una función que reciba un array de gustos de helados como parámetro que imprima en consola un array con los mismos gustos pero que solo estén las primeras 3 letras de cada gusto, pasadas todas a mayúscula.
+*/
+
+let arr = ['Coco', 'Chocolate', 'Vainilla'];
+
+let funcion = (gustos) => {
+    let newArr = [];
+    for ( i = 0; gustos.length > i; i++ ){
+        newArr.push(gustos[i].slice(0, 3).toUpperCase());
+    };
+    console.log(newArr);
+}
+funcion(arr);
