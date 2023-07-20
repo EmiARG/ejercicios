@@ -416,7 +416,7 @@ console.log(funcion());
 
 /* Ejercicio 35, Escribí un código en el cual crees un array con gustos de helados y una función que reciba un array de gustos de helados como parámetro que imprima en consola un array con los mismos gustos pero que solo estén las primeras 3 letras de cada gusto, pasadas todas a mayúscula.
 */
-
+/*
 let arr = ['Coco', 'Chocolate', 'Vainilla'];
 
 let funcion = (gustos) => {
@@ -427,3 +427,20 @@ let funcion = (gustos) => {
     console.log(newArr);
 }
 funcion(arr);
+*/
+/* Ejercicio 36, un integrante del equipo de Nucba es fanático de Cristiano Ronaldo y de escribir las palabras al revés. Como si esto fuera poco, suele poner muchos espacios al principio y al final de cada frase. El otro día escribió la frase que van a ver en este enunciado.
+Para arreglar esto, les pedimos que escriban una función que:
+- Elimine los espacios al principio y al final de la frase.
+- invierta todas las palabras para que el texto pueda leerse correctamente.
+- Reemplace la palabra “Ronaldo” por la palabra “Messi” y viceversa.
+*/
+/*
+let frase = "      .levin us ed sojel yum atse isseM y odnum led rodaguj rojem le se odlanoR         ";
+console.log(frase);
+let funcion = (frase) => {
+    let newFrase = frase.trim().split('').reverse('').join('').replace('Messi', 'Ronaldo').replace('Ronaldo', 'Messi');
+    console.log(newFrase);
+};
+funcion(frase);
+*/
+
