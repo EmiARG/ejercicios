@@ -488,6 +488,23 @@ let funcion = (a, b, array) => {
 funcion(10, 28, arrNum);
 */
 
-/* Ejercicio 39, 
+/* Ejercicio 39, Utilizando forEach, crea una función que reciba dos números y un array de números y que devuelva el mismo array pero con los números mayores al primer numero dado multiplicados por el segundo numero dado. En caso de que no sean mayores al número dado, devolver el mismo número en esa posición.
+Ejemplo: Si tenemos un array de números del 1 al 5 , y llamamos a multiplicarMayoresA(3,10,numeros) , el output será : [1,2,3,40,50]
+*/
+/*
+let arr = [1, 2, 3, 4, 5, 6, 7];
 
+let funcion = (a, b, array) => {
+    let newArr = [];
+    arr.forEach((numero) => {
+        if(a >= numero){
+            newArr.push(numero);
+        } else if(a < numero){
+            newArr.push(b * numero);
+        }
+    });
+    console.log(newArr);
+    return newArr;
+};
+funcion(2, 10, arr);
 */
