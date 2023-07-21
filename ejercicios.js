@@ -508,3 +508,55 @@ let funcion = (a, b, array) => {
 };
 funcion(2, 10, arr);
 */
+
+// Ejercicio 40, Crea una función que reciba un array de números y un número que EN CASO DE QUE EXISTA al menos un número mayor al dado, retorne el primero que cumpla con esa condición. En caso contrario, que retorne “No hay números mayores al número dado”
+/*
+let arr = [1, 2, 3, 4, 5, 6, 7];
+
+let funcion = (array, numeroLimite) => 
+    array.some((a) => a > numeroLimite)
+    ? array.find((a) => a > numeroLimite)
+    : 'No hay números mayores al número dado';
+
+console.log(funcion(arr, 4));
+
+*/
+// Ejercicio 41, Crea una función que reciba un array de palabras que devuelva la primer palabra del array ( la primera que se encuentre) que tenga mas de 4 letras. En caso de que no haya, deberá devolver un string que diga : “No hay palabras con mas de 4 letras”
+/*
+let palabras = ['Rojo', 'Azul', 'Amarillo', 'Violeta'];
+
+let funcion = (array) => 
+    array.some((a) => a.length > 4)
+    ? array.find((a) => a.length > 4)
+    : 'No hay palabras con mas de 4 letras';
+console.log(funcion(palabras));
+*/
+
+// Ejercicio 42, Utilizando map, crea una función que reciba un array de números y devuelva el mismo array pero con todos los números duplicados.
+/*
+let numeros = [1, 2, 3, 4, 5, 6, 7];
+
+let numerosXdos = (arr) => {
+    return arr.map((a) => a * 2);
+};
+console.log(numerosXdos(numeros));
+console.log(numeros);
+*/
+
+/* Ejercicio 43, Usando el mismo array de números y map , crea una función que reciba un array de números, un número y una función que realice una operación matemática con el número dado y la función pasada como parámetro para cada número del array dado , y devuelva el nuevo array con los resultados ( podes utilizar las funciones de suma, resta, multiplicación y división de anteriores prácticas.
+*/
+/*
+let numeros = [1, 2, 3, 4, 5, 6, 7];
+
+let suma = (a, b) => {
+    return a + b;
+};
+
+let funcion = (arr, numero, callback) => {
+    let numerosSumados = arr.map((a) => callback(a, numero));
+    return numerosSumados;
+};
+console.log(funcion(numeros, 2, suma));
+*/
+
+//
