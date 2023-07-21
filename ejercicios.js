@@ -444,3 +444,50 @@ let funcion = (frase) => {
 funcion(frase);
 */
 
+// Ejercicio 37, Utilizando forEach, crea una función que reciba un array de palabras y devuelva otro solamente con las palabras que incluyan la letra “m” (tanto mayúscula como minúscula).
+//let arr2 = [];
+//let arr = ['Moldavia', 'Colombia', 'Togo', 'Argentina', 'Brasil'];
+/*
+arr.forEach((e) => {
+    if(e.includes('M') || e.includes('m') == true){
+    arr2.push(e);
+    };
+});
+console.log(arr2);
+*/
+/*
+let funcion = (paises) => {
+    arr2 = [];
+    paises.forEach((pais) => {
+        if(pais.toLowerCase().includes('m')){
+            arr2.push(pais);
+        }
+    });
+    console.log(arr2);
+    return arr2;
+};
+funcion(arr);
+*/
+
+/* Ejercicio 38, Utilizando forEach, crea una función que reciba dos números y un array de números y que devuelva otro array con aquellos números que estén en el array y sean mayores al primer numero dado y menores al segundo ( sin incluirlos).
+*/
+/*
+let arrNum = [2, 13, 15, 25, 40, 18];
+
+let funcion = (a, b, array) => {
+    let arrNum2 = [];
+    arrNum.forEach((numero) => {
+        if(numero > a && numero < b){
+            arrNum2.push(numero);
+            arrNum2.sort((a, b) => a-b);
+        }
+    });
+    console.log(arrNum2);
+    return arrNum2;
+};
+funcion(10, 28, arrNum);
+*/
+
+/* Ejercicio 39, 
+
+*/
