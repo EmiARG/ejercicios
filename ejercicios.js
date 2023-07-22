@@ -586,4 +586,59 @@ class Pelicula {
   console.log(arrPeliculas);
 
   // Creá una función que ordene el array por año de salida, desde la mas larga hasta la mas corta e imprimí el array por consola.
-
+/*
+let ordenarPorAño = () => {
+    arrPeliculas.sort((a, b) =>{
+        if(a.año < b.año){
+            return -1;
+        } else if(a.año > b.año){
+            return 1;
+        } else {
+            return 0;
+        };
+    });
+    console.log(arrPeliculas);
+};
+ordenarPorAño();
+*/
+// Crea una función que ordene el array por duración, desde la que mas haya durado hasta la que menos. imprimí por consola el array.
+/*
+let ordenarDuracion = () => {
+    arrPeliculas.sort((a, b)=>{
+        if(a.duracion > b.duracion){
+            return -1;
+        } else if(a.duracion < b.duracion){
+            return 1;
+        } else {
+            return 0;
+        };
+    });
+    console.log(arrPeliculas);
+};
+ordenarDuracion();
+*/
+// Crea una función que reciba un array de películas como parámetro y devuelva un nuevo array con las películas que duren mas de 150 minutos.
+/*
+let peliculasMasLargas = (array) => {
+    return array.filter((pelicula) => pelicula.duracion > 150);
+};
+console.log(peliculasMasLargas(arrPeliculas));
+*/
+// Crea una función que reciba un array de películas como parámetro y devuelva un nuevo array con las películas que duren menos de 150 minutos y sean de un año menor o igual que el año 2016 .
+/*
+let peliculas2 = (array) => {
+    return array.filter((pelicula) => pelicula.duracion < 150 && pelicula.año <= 2016);
+};
+console.log(peliculas2(arrPeliculas));
+*/
+/* Creá una función que reciba un array de películas y retorne la sumatoria de los minutos de duración de todas las películas del mismo. Imprimí luego el siguiente mensaje en consola:
+“La cantidad total de minutos de las películas es de {total} minutos”
+*/
+/*
+let duracionTotal = (array)=>{
+        let total = array.reduce((acc, pelicula) => 
+        acc + pelicula.duracion, 0);
+        return total;
+};
+console.log(`La cantidad total de minutos de las películas es de ${duracionTotal(arrPeliculas)} minutos.`);
+*/
